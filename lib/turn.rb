@@ -6,12 +6,13 @@ def turn(board)
       move(board, index, token="X")
       display_board(board)
     else
-      until valid_move?(board, index)
-        input = gets.strip
-        break
-      end
-    end
-    display_board(board)
+      turn(board)
+    #   until valid_move?(board, index)
+    #     input = gets.strip
+    #     break
+    #   end
+    # end
+    # display_board(board)
 end
 
 #define helper methods below
