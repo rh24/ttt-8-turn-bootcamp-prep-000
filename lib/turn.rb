@@ -6,7 +6,7 @@ def turn(board)
       move(board, index, token="X")
       display_board(board)
     else
-      turn(board)
+      turn(board) # this is called recursion
     end
     #   until valid_move?(board, index)
     #     input = gets.strip
